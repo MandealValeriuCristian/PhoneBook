@@ -63,8 +63,8 @@ namespace PhoneBook
             this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(130, 76);
-            this.toolStripButton4.Text = "Register Data";
+            this.toolStripButton4.Size = new System.Drawing.Size(149, 76);
+            this.toolStripButton4.Text = "Register Data F2";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton3
@@ -73,8 +73,8 @@ namespace PhoneBook
             this.toolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(88, 76);
-            this.toolStripButton3.Text = "Search";
+            this.toolStripButton3.Size = new System.Drawing.Size(107, 76);
+            this.toolStripButton3.Text = "Search F3";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton2
@@ -83,8 +83,8 @@ namespace PhoneBook
             this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(112, 76);
-            this.toolStripButton2.Text = "About me";
+            this.toolStripButton2.Size = new System.Drawing.Size(131, 76);
+            this.toolStripButton2.Text = "About me F4";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripButton1
@@ -94,8 +94,9 @@ namespace PhoneBook
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(66, 76);
-            this.toolStripButton1.Text = "Exit";
+            this.toolStripButton1.Size = new System.Drawing.Size(105, 76);
+            this.toolStripButton1.Text = "Exit [ESC]";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // toolStripSeparator1
             // 
@@ -121,6 +122,7 @@ namespace PhoneBook
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
