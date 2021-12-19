@@ -38,6 +38,11 @@ namespace PhoneBook
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if(this.ID_textBox1.Text == "")
+            {
+                MessageBox.Show("You must enter the ID!");
+                return;
+            }
             this.btnSave.Enabled = false;
             this.btnNew.Enabled = true;
             // ----------------------------
@@ -58,6 +63,8 @@ namespace PhoneBook
             System.IO.File.WriteAllText(adress, this.Adress_textBox7.Text, Encoding.UTF8);
             string comment = path + this.ID_textBox1.Text + "_comment.txt";
             System.IO.File.WriteAllText(comment, this.Comment_textBox8.Text, Encoding.UTF8);
+
+            MessageBox.Show("Saved!");
         }
 
         private void Register_form_Load(object sender, EventArgs e)
