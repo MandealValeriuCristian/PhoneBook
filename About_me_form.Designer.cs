@@ -98,9 +98,9 @@ namespace PhoneBook
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(15, 160);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(273, 17);
+            this.label6.Size = new System.Drawing.Size(269, 17);
             this.label6.TabIndex = 6;
-            this.label6.Text = "https://github.com/MandealValeriuCristian/";
+            this.label6.Text = "https://github.com/MandealValeriuCristian";
             // 
             // label7
             // 
