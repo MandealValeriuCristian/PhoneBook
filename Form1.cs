@@ -16,5 +16,26 @@ namespace PhoneBook
         {
             InitializeComponent();
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Register_form rg = new Register_form();
+            rg.MdiParent = this;
+            rg.Show();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            Search_form rg = new Search_form();
+            rg.MdiParent = this;
+            rg.Show();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            About_me_form rg = new About_me_form();
+            rg.MdiParent = this;
+            rg.Show();
+        }
     }
 }
