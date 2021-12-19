@@ -17,9 +17,28 @@ namespace PhoneBook
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+       
+        private void btnNew_Click(object sender, EventArgs e)
         {
-
+            this.btnNew.Enabled = false;
+            this.btnSave.Enabled = true;
+            // ----------------------------
+            this.Info_group_box.Enabled = true;
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            this.btnSave.Enabled = false;
+            this.btnNew.Enabled = true;
+            // ----------------------------
+            this.Info_group_box.Enabled = false;
+        }
+
+        private void Register_form_Load(object sender, EventArgs e)
+        {
+            this.Info_group_box.Enabled = false;
+        }
+
+       
     }
 }
