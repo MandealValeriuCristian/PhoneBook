@@ -37,5 +37,30 @@ namespace PhoneBook
             rg.MdiParent = this;
             rg.Show();
         }
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F2)
+            {
+                toolStripButton1_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.F3)
+            {
+                toolStripButton2_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.F4)
+            {
+                toolStripButton3_Click(sender, e);
+            }
+            if (e.KeyCode == Keys.Escape)
+            {
+                toolStripButton4_Click(sender, e);
+            }
+        }
+
+        
     }
 }
