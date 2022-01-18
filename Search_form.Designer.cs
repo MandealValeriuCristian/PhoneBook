@@ -113,7 +113,7 @@ namespace PhoneBook
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 17);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Adress:";
+            this.label7.Text = "Address:";
             // 
             // Email_textBox6
             // 

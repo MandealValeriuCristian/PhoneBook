@@ -30,7 +30,7 @@ namespace PhoneBook
             validation("tell",Tell_textBox4);
             validation("cell", Cell_textBox5);
             validation("email", Email_textBox6);
-            validation("adress", Adress_textBox7);
+            validation("address", Adress_textBox7);
             validation("comment", Comment_textBox8);
 
             this.ID_textBox1.Text = this.textBox1.Text;

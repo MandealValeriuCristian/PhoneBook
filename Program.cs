@@ -9,13 +9,19 @@ namespace PhoneBook
 {
     static class Program
     {
-
+        
         public class PhoneBookContext : DbContext
         {
             public DbSet<Person> Person { get; set; }
-            public DbSet<Email> emails { get; set; }
-            public DbSet<Adress> adresses { get; set; }
+
+            public PhoneBookContext()
+            : base("name=DefaultConnection")
+            {
+                
+            }
         }
+
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -24,7 +30,7 @@ namespace PhoneBook
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainPage());
         }
     }
 }

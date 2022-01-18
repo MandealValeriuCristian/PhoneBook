@@ -48,21 +48,28 @@ namespace PhoneBook
             // ----------------------------
             this.Info_group_box.Enabled = false;
             // ---------------------------------
-            string path = @"D:\MyProjects\PhoneBook\Path\";
-            string fn = path + this.ID_textBox1.Text + "_fn.txt";
-            System.IO.File.WriteAllText(fn, this.FirstName_textBox2.Text, Encoding.UTF8);
-            string ln = path + this.ID_textBox1.Text + "_ln.txt";
-            System.IO.File.WriteAllText(ln, this.LastName_textBox3.Text, Encoding.UTF8);
-            string tell = path + this.ID_textBox1.Text + "_tell.txt";
-            System.IO.File.WriteAllText(tell, this.Tell_textBox4.Text, Encoding.UTF8);
-            string cell = path + this.ID_textBox1.Text + "_cell.txt";
-            System.IO.File.WriteAllText(cell, this.Cell_textBox5.Text, Encoding.UTF8);
-            string email = path + this.ID_textBox1.Text + "_email.txt";
-            System.IO.File.WriteAllText(email, this.Email_textBox6.Text, Encoding.UTF8);
-            string adress = path + this.ID_textBox1.Text + "_adress.txt";
-            System.IO.File.WriteAllText(adress, this.Adress_textBox7.Text, Encoding.UTF8);
-            string comment = path + this.ID_textBox1.Text + "_comment.txt";
-            System.IO.File.WriteAllText(comment, this.Comment_textBox8.Text, Encoding.UTF8);
+            //string path = @"D:\MyProjects\PhoneBook\Path\";
+            //string fn = path + this.ID_textBox1.Text + "_fn.txt";
+            //System.IO.File.WriteAllText(fn, this.FirstName_textBox2.Text, Encoding.UTF8);
+            //string ln = path + this.ID_textBox1.Text + "_ln.txt";
+            //System.IO.File.WriteAllText(ln, this.LastName_textBox3.Text, Encoding.UTF8);
+            //string tell = path + this.ID_textBox1.Text + "_tell.txt";
+            //System.IO.File.WriteAllText(tell, this.Tell_textBox4.Text, Encoding.UTF8);
+            //string cell = path + this.ID_textBox1.Text + "_cell.txt";
+            //System.IO.File.WriteAllText(cell, this.Cell_textBox5.Text, Encoding.UTF8);
+            //string email = path + this.ID_textBox1.Text + "_email.txt";
+            //System.IO.File.WriteAllText(email, this.Email_textBox6.Text, Encoding.UTF8);
+            //string address = path + this.ID_textBox1.Text + "_adress.txt";
+            //System.IO.File.WriteAllText(address, this.Adress_textBox7.Text, Encoding.UTF8);
+            //string comment = path + this.ID_textBox1.Text + "_comment.txt";
+            //System.IO.File.WriteAllText(comment, this.Comment_textBox8.Text, Encoding.UTF8);
+
+            var person = new Person();
+            person.NumberPhone = this.ID_textBox1.Text;
+            person.FirstName = this.FirstName_textBox2.Text;
+            person.LastName = this.LastName_textBox3.Text;
+            person.Email = this.Email_textBox6.Text;
+            person.Address = Adress_textBox7.Text;
 
             MessageBox.Show("Saved!");
         }
